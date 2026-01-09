@@ -110,3 +110,44 @@ docs/screenshots/
 
 - Annif: https://github.com/NatLibFi/Annif  
 - Models: https://huggingface.co/NatLibFi/Annif-LLMs4Subjects-GermEval2025-data  
+
+---
+
+## Citations
+
+### Annif at GermEval 2025
+
+```bibtex
+@inproceedings{suominen2025annif,
+  title={Annif at the GermEval-2025 LLMs4Subjects Task: Traditional XMTC Augmented by Efficient LLMs},
+  author={Suominen, Osma and Inkinen, Juho and Lehtinen, Mona},
+  booktitle={Proceedings of the 21st Conference on Natural Language Processing (KONVENS 2025): Workshops},
+  pages={447--454},
+  year={2025}
+}
+```
+
+### SemEval-2025 Task 5: LLMs4Subjects
+
+```bibtex
+@inproceedings{dsouza-etal-2025-semeval,
+  title = {{S}em{E}val-2025 Task 5: {LLM}s4{S}ubjects - {LLM}-based Automated Subject Tagging for a National Technical Library's Open-Access Catalog},
+  author = {D'Souza, Jennifer and Sadruddin, Sameer and Israel, Holger and Begoin, Mathias and Slawig, Diana},
+  booktitle = {Proceedings of the 19th International Workshop on Semantic Evaluation (SemEval-2025)},
+  year = {2025},
+  publisher = {Association for Computational Linguistics},
+  url = {https://aclanthology.org/2025.semeval-1.328/}
+}
+```
+
+### GermEval 2025 Shared Task Dataset
+
+```bibtex
+@misc{D_Souza_The_GermEval_2025_2025,
+  author = {D'Souza, Jennifer and Sadruddin, Sameer and Israel, Holger and Begoin, Mathias and Slawig, Diana},
+  title = {{The GermEval 2025 2nd LLMs4Subjects Shared Task Dataset}},
+  year = {2025},
+  doi = {10.5281/zenodo.16743609},
+  url = {https://github.com/sciknoworg/llms4subjects}
+}
+```
