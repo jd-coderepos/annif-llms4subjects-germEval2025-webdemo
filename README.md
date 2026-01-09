@@ -89,61 +89,81 @@ http://localhost:5000
 
 ---
 
-## 7. Test predictions
+## 7. Screenshots and example walkthroughs
 
-Select:
-- `gnd-bm-ensemble-de` (recommended)
+All screenshots referenced in this section are stored in the `assets/` folder of this repository.
 
-Paste text and click **Suggest**.
+### Web UI overview
 
----
+After successfully starting Annif, the Web UI should appear as follows:
 
-## 8. Screenshots
+<assets/screen1.png>
 
-When you successfully start the software, it should appear as
+Once the GermEval 2025 models have been downloaded, they are available to the end user via a **dropdown list**:
 
-<screen1>
+<assets/screen2-choose-model.png>
 
-Given that you have downloaded all models listed above, this choice is then available to end user given a drop down list
-
-<screen2-choose-model>
-
-Next we demonstrate subject classification or recommendation of relevant GND subjects given input data. A note here is when you first test any of the models from the dropdown list, it will take time to load into memory. But once you run the model, the prediction time is much faster as the model is now loaded into memory.
-
-1) Example 1 (conference, de): https://github.com/sciknoworg/llms4subjects/blob/main/shared-task-datasets/TIBKAT/all-subjects/data/test/gold-standard-testset/Conference/de/3A024846546.jsonld
-
-Copy over the title and abstract into the interface.
-
-Here I choose the "bm ensemble de" model. And Select the choice for "20" max # of suggestions.
-
-Click "Get suggestions"
-
-<add-example1-screenshot>
-
-2) Example 2 (report, en): https://github.com/sciknoworg/llms4subjects/blob/main/shared-task-datasets/TIBKAT/all-subjects/data/test/gold-standard-testset/Report/en/3A244453667.jsonld
-
-I selected the "bm ensemble en" model. And I set max # of suggestions as 10.
-
-<add-example2-screenshot>
-
-3) Example 3 (thesis, en): https://github.com/sciknoworg/llms4subjects/blob/main/shared-task-datasets/TIBKAT/all-subjects/data/train/Thesis/en/3A1667217267.jsonld
-
-<add-example3-screenshot>
-
-4) Example 4 (article, de): https://github.com/sciknoworg/llms4subjects/blob/main/shared-task-datasets/TIBKAT/all-subjects/data/train/Article/de/3A1762285525.jsonld
-
-<add-example4-screenshot>
+> **Performance note**  
+> When a model is selected for the first time after startup, it may take some time to load into memory.  
+> Once loaded, subsequent predictions are significantly faster.
 
 ---
 
-## References
+### Example 1: Conference paper (German)
+
+Source record:  
+https://github.com/sciknoworg/llms4subjects/blob/main/shared-task-datasets/TIBKAT/all-subjects/data/test/gold-standard-testset/Conference/de/3A024846546.jsonld
+
+Steps:
+- Copy the **title and abstract** into the input field
+- Select **`gnd-bm-ensemble-de`**
+- Set **max. suggestions = 20**
+- Click **Get suggestions**
+
+<assets/example1-de.png>
+
+---
+
+### Example 2: Report (English)
+
+Source record:  
+https://github.com/sciknoworg/llms4subjects/blob/main/shared-task-datasets/TIBKAT/all-subjects/data/test/gold-standard-testset/Report/en/3A244453667.jsonld
+
+Steps:
+- Select **`gnd-bm-ensemble-en`**
+- Set **max. suggestions = 10**
+
+<assets/example2-en.png>
+
+---
+
+### Example 3: Thesis (English)
+
+Source record:  
+https://github.com/sciknoworg/llms4subjects/blob/main/shared-task-datasets/TIBKAT/all-subjects/data/train/Thesis/en/3A1667217267.jsonld
+
+<assets/example3-en.png>
+
+---
+
+### Example 4: Article (German)
+
+Source record:  
+https://github.com/sciknoworg/llms4subjects/blob/main/shared-task-datasets/TIBKAT/all-subjects/data/train/Article/de/3A1762285525.jsonld
+
+<assets/example4-de.png>
+
+
+---
+
+## 8. References
 
 - Annif: https://github.com/NatLibFi/Annif  
 - Models: https://huggingface.co/NatLibFi/Annif-LLMs4Subjects-GermEval2025-data  
 
 ---
 
-## Citations
+## 9. Citations
 
 ### Annif at GermEval 2025
 
