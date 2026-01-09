@@ -97,11 +97,11 @@ All screenshots referenced in this section are stored in the `assets/` folder of
 
 After successfully starting Annif, the Web UI should appear as follows:
 
-<assets/screen1.png>
+![Annif Web UI overview](assets/screen1.png)
 
-Once the GermEval 2025 models have been downloaded, they are available to the end user via a **dropdown list**:
+Once the GermEval 2025 models have been downloaded, they are available to the end user via a dropdown list:
 
-<assets/screen2-choose-model.png>
+![Model selection dropdown](assets/screen2-choose-model.png)
 
 > **Performance note**  
 > When a model is selected for the first time after startup, it may take some time to load into memory.  
@@ -120,7 +120,7 @@ Steps:
 - Set **max. suggestions = 20**
 - Click **Get suggestions**
 
-<assets/example1-de.png>
+![Example 1 – Conference (DE)](assets/example1-de.png)
 
 ---
 
@@ -133,7 +133,7 @@ Steps:
 - Select **`gnd-bm-ensemble-en`**
 - Set **max. suggestions = 10**
 
-<assets/example2-en.png>
+![Example 2 – Report (EN)](assets/example2-en.png)
 
 ---
 
@@ -142,7 +142,7 @@ Steps:
 Source record:  
 https://github.com/sciknoworg/llms4subjects/blob/main/shared-task-datasets/TIBKAT/all-subjects/data/train/Thesis/en/3A1667217267.jsonld
 
-<assets/example3-en.png>
+![Example 3 – Thesis (EN)](assets/example3-en.png)
 
 ---
 
@@ -151,7 +151,7 @@ https://github.com/sciknoworg/llms4subjects/blob/main/shared-task-datasets/TIBKA
 Source record:  
 https://github.com/sciknoworg/llms4subjects/blob/main/shared-task-datasets/TIBKAT/all-subjects/data/train/Article/de/3A1762285525.jsonld
 
-<assets/example4-de.png>
+![Example 4 – Article (DE)](assets/example4-de.png)
 
 
 ---
