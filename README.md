@@ -51,8 +51,8 @@ docker run -it --rm ^
   quay.io/natlibfi/annif bash
 ```
 
-> **First run:** Docker will automatically download the Annif image. This may take a few minutes.
-> **Note:** If you have already started Annif before and `http://localhost:5000` opens in your browser, you do **not** need to run this command again.
+> **First run:** Docker will automatically download the Annif image. This may take a few minutes.  
+> **Note:** If you have already started Annif before and `http://localhost:5000` opens in your browser, you do **not** need to run this command again.  
 > If you see a message that port `5000` is already in use, see *Troubleshooting when restarting your laptop* at the end of this README.
 
 ---
