@@ -237,7 +237,7 @@ docker ps
 ```
 
 - If an Annif container is listed and mapped to port `5000`, the Web UI should be available.
-- If no container is running, start Annif again by following **Step 3** and **Step 6** of this README.
+- If no container is running, start Annif again by following **Step 3** and **Step 5** of this README.
 
 ---
 
@@ -255,9 +255,9 @@ Stop it with:
 docker stop <container-name-or-id>
 ```
 
-Then either:
-- reopen http://localhost:5000, or  
-- restart Annif following the steps above.
+Then:
+- restart Annif following the steps 3 and 5 above.
+  - launch ANNIF via http://localhost:5000
 
 ---
 
