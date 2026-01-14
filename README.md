@@ -98,7 +98,48 @@ http://localhost:5000
 
 ---
 
-## 7. Screenshots and example walkthroughs
+## 7. Stopping Annif and Docker (optional)
+
+When you are done using Annif, you can stop the application and the Docker container cleanly.
+
+### Stop the Annif Web UI
+In the terminal where Annif is running, press:
+
+```
+Ctrl + C
+```
+
+You will see messages like:
+```
+Shutting down
+Application shutdown complete.
+```
+
+This stops the Annif server.
+
+### Stop the Docker container
+After Annif has stopped, type:
+
+```bash
+exit
+```
+
+This exits the container and stops Docker for this session.
+
+---
+
+### Restarting later
+
+To start Annif again at a later time, simply:
+
+1. Follow **Step 3** to start the Annif Docker container
+2. Follow **Step 6** to launch the Web UI
+
+Your downloaded models and data are preserved and do **not** need to be reinstalled.
+
+---
+
+## 8. Screenshots and example walkthroughs
 
 All screenshots referenced in this section are stored in the `assets/` folder of this repository.
 
