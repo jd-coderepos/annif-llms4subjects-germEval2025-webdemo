@@ -1,5 +1,7 @@
 # Annif BM-Ensemble Demo Application (Docker-based)
 
+[![Annif BM-Ensemble demo](https://img.youtube.com/vi/xEf4zyoNTZA/0.jpg)](https://youtu.be/xEf4zyoNTZA)
+
 This repository provides a **minimal, reproducible setup** to run **Annif** with selected **GermEval 2025 LLMs4Subjects models** (BM ensemble, Bonsai, MLLM) via **Docker**, and to use Annif through its **built-in Web UI and REST API**.
 
 If the GND is your classification taxonomy, consider this as a librarian personal assistant
