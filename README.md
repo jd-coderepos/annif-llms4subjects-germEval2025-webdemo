@@ -30,21 +30,23 @@ Ensure Docker is running and has **≥ 8 GB RAM** available.
 
 ## 2. Prepare a local working directory
 
-Create an empty directory, e.g.:
+Create an empty directory on your machine, e.g.:
 
 ```
-C:\path\to\annif-projects
+C:\path\to\annif-subjectindexing
 ```
 
-This directory will persist all Annif data.
+This directory will store all Annif data (models and configurations).  
+You may choose any folder name you like; `annif-subjectindexing` is only a recommendation.  
+Just make sure to use the same folder consistently in the steps that follow.
 
 ---
 
 ## 3. Start the Annif Docker container
 
-```bat
-cd /d C:\path\to\annif-projects
+First `cd C:\path\to\annif-subjectindexing`
 
+```bat
 docker run -it --rm ^
   -p 5000:5000 ^
   -v "%cd%":/annif-projects ^
@@ -64,9 +66,16 @@ docker run -it --rm ^
 
 Inside the container:
 
+You should already be in the `/annif-projects` directory as a result of the Docker command in Step 3.  
+If not, run:
+
 ```bash
 cd /annif-projects
+```
 
+Then download the models:
+
+```bash
 annif download --trust-repo "gnd-bm-ensemble-*" NatLibFi/Annif-LLMs4Subjects-GermEval2025-data
 annif download --trust-repo "gnd-bonsai-*" NatLibFi/Annif-LLMs4Subjects-GermEval2025-data
 annif download --trust-repo "gnd-mllm-*" NatLibFi/Annif-LLMs4Subjects-GermEval2025-data
@@ -77,7 +86,7 @@ https://huggingface.co/NatLibFi/Annif-LLMs4Subjects-GermEval2025-data
 
 ---
 
-## 5. Verify installation (one-time check)
+Verify installation (one-time check)
 
 > This check is only required the first time to confirm that the models were downloaded successfully.
 
@@ -87,7 +96,7 @@ annif list-projects
 
 ---
 
-## 6. Launch the Web UI
+## 5. Launch the Web UI
 
 ```bash
 annif run --host 0.0.0.0 --port 5000
@@ -98,7 +107,7 @@ http://localhost:5000
 
 ---
 
-## 7. Stopping Annif and Docker (optional)
+## 6. Stopping Annif and Docker (optional)
 
 When you are done using Annif, you can stop the application and the Docker container cleanly.
 
@@ -133,13 +142,13 @@ This exits the container and stops Docker for this session.
 To start Annif again at a later time, simply:
 
 1. Follow **Step 3** to start the Annif Docker container
-2. Follow **Step 6** to launch the Web UI
+2. Follow **Step 5** to launch the Web UI
 
 Your downloaded models and data are preserved and do **not** need to be reinstalled.
 
 ---
 
-## 8. Screenshots and example walkthroughs
+## 7. Screenshots and example walkthroughs
 
 All screenshots referenced in this section are stored in the `assets/` folder of this repository.
 
