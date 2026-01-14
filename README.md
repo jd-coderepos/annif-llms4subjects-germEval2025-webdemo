@@ -167,7 +167,7 @@ https://github.com/sciknoworg/llms4subjects/blob/main/shared-task-datasets/TIBKA
 
 ## Troubleshooting when restarting your laptop
 
-If you have already started Annif once, you usually **do not need to run the `docker run …` command again** after restarting your laptop.
+If you have already started Annif once, you usually **do not need to run the `docker run …` command again** (step 3 above) after restarting your laptop.
 
 ### Just open the Web UI
 If Annif was running before shutdown and Docker has restarted it automatically, simply open:
