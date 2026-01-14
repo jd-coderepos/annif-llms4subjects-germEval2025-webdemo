@@ -9,7 +9,7 @@ If **GND** is your classification taxonomy, consider this a **personal subject i
 ▶️ **Video tutorial (click to watch on YouTube)**  
 
 [![Annif BM-Ensemble demo](https://img.youtube.com/vi/xEf4zyoNTZA/0.jpg)](https://youtu.be/xEf4zyoNTZA)  
-Short walkthrough showing how to launch Annif locally with BM-ensemble models trained on legacy TIB catalog records.
+Short walkthrough showing how to launch Annif locally using BM-ensemble models trained on legacy TIB catalog records.
 
 ---
 
