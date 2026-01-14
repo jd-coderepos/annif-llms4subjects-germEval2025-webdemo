@@ -51,9 +51,16 @@ docker run -it --rm ^
   quay.io/natlibfi/annif bash
 ```
 
+> **First run:** Docker will automatically download the Annif image. This may take a few minutes.
+> **Note:** If you have already started Annif before and `http://localhost:5000` opens in your browser, you do **not** need to run this command again.
+> If you see a message that port `5000` is already in use, see *Troubleshooting when restarting your laptop* at the end of this README.
+
 ---
 
 ## 4. Download GermEval 2025 models
+
+> **This step only needs to be done once.**  
+> After the models are downloaded, they are stored in your local working directory and will be reused in future sessions.
 
 Inside the container:
 
@@ -70,7 +77,9 @@ https://huggingface.co/NatLibFi/Annif-LLMs4Subjects-GermEval2025-data
 
 ---
 
-## 5. Verify installation
+## 5. Verify installation (one-time check)
+
+> This check is only required the first time to confirm that the models were downloaded successfully.
 
 ```bash
 annif list-projects
@@ -118,6 +127,7 @@ Steps:
 - Copy the **title and abstract** into the input field
 - Select **`gnd-bm-ensemble-de`**
 - Set **max. suggestions = 20**
+> Max # Suggestions determine how many subjects are recommended.
 - Click **Get suggestions**
 
 ![Example 1 – Conference (DE)](assets/example1-de.png)
@@ -153,6 +163,58 @@ https://github.com/sciknoworg/llms4subjects/blob/main/shared-task-datasets/TIBKA
 
 ![Example 4 – Article (DE)](assets/example4-de.png)
 
+---
+
+## Troubleshooting when restarting your laptop
+
+If you have already started Annif once, you usually **do not need to run the `docker run …` command again** after restarting your laptop.
+
+### Just open the Web UI
+If Annif was running before shutdown and Docker has restarted it automatically, simply open:
+
+http://localhost:5000
+
+in your browser.
+
+---
+
+### If `localhost:5000` does not open
+
+Check whether the Annif container is running:
+
+```bat
+docker ps
+```
+
+- If an Annif container is listed and mapped to port `5000`, the Web UI should be available.
+- If no container is running, start Annif again by following **Step 3** and **Step 6** of this README.
+
+---
+
+### If port 5000 is already in use
+
+If you see an error such as:
+
+Bind for 0.0.0.0:5000 failed: port is already allocated
+
+another container (often a previous Annif instance) is already using the port.
+
+Stop it with:
+
+```bat
+docker stop <container-name-or-id>
+```
+
+Then either:
+- reopen http://localhost:5000, or  
+- restart Annif following the steps above.
+
+---
+
+### Important note
+- Turning your laptop **off** stops all containers.
+- When Docker starts again, containers that were previously running **may automatically restart**.
+- In that case, Annif is already available and **no new setup is required**.
 
 ---
 
