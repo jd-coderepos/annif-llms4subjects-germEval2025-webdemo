@@ -1,4 +1,4 @@
-# Annif BM-Ensemble Demo Application (Docker-based)
+# GND Subject Indexing Application (Docker-based)
 
 This repository provides a **minimal, reproducible setup** to run **Annif** with selected **GermEval 2025 LLMs4Subjects models** (BM ensemble, Bonsai, MLLM) via **Docker**, and to use Annif through its **built-in Web UI and REST API**.
 
